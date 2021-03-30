@@ -21,7 +21,7 @@
 
 
 //! define the initial population of EDA (default: 20000)
-#define EDA_INIT_POP (100000)
+#define EDA_INIT_POP (1000000)
 //! define the selected population of EDA (default: 20)
 #define EDA_SEL_POP (10000)
 //! define the number of iterations of EDA (default: 100)

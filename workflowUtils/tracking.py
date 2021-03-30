@@ -7,6 +7,8 @@ from haversine import haversine, Unit
 from .projectiveGeometry import  parseHomography, homography2Dto3D
 import math
 
+
+
 class Tracker:
     def __init__(self, height, width, maxlost = 30, speed_update_rate = 25, emaAlpha = 0.4, params_file=None):
         self.speed_update_rate = speed_update_rate

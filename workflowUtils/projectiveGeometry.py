@@ -21,11 +21,11 @@ def parseHomography(param_file):
     homographyMat[2] = list(map(tof, matRows[2].split(' ')))
     return homographyMat
 
+#
 def homography2Dto3D(o2dpt, homoMat):
     homogen2dPt = [*o2dpt, 1]
     matInv = np.linalg.inv(homoMat)
     hh = np.dot(matInv, homogen2dPt)
-    print(hh)
     scalar = hh[2]
     return [hh[0]/scalar, hh[1]/scalar]
 

@@ -2,11 +2,11 @@
   // general information
   "genInfo": {
     // path of input video frame
-    "inFrmPth": "./data/frm.jpg",
+    "inFrmPth": "/home/hector/titulacion_code_refined/documents/imgs/seattle14.jpg",
     // path of output text file of camera matrix
-    "outCamMatPth": "./data/calibration.txt",
+    "outCamMatPth": "./data/RANSAC/calibration14.txt",
     // path of output display image of camera calibration, necessary when outCalDispFlg = 1
-    "outCalDispPth": "./data/calibration.jpg",
+    "outCalDispPth": "./data/RANSAC/calibration14.jpg",
     // flag of output display image of camera calibration
     "outCalDispFlg": 1,
     // resized video frame height (negative: original size)
@@ -31,14 +31,23 @@
     ],
     // input sequence of 3D points on the ground plane
     "cal3dPtLs": [
-      [47.56462370593717, -122.33953899167494],
-      [47.56465899785416, -122.33941963337811],
-      [47.56523035939893, -122.3399375430659],
-      [47.565612230353324, -122.33994022527482],
-      [47.564896446253215, -122.33921736994921],
-      [47.56558236851095, -122.33921468774085],
-      [47.56462406566503, -122.3395392350252],
-      [47.56626635306361, -122.33953740110947]
+      [
+        47.61844806004535,
+        -122.3342194611766
+      ],
+      [
+        47.617938658609724,
+        -122.33420806178592
+      ],
+      [
+        47.618093694353036,
+        -122.33444074340593
+      ],
+      [
+        47.61844896403636,
+        -122.33441861518564
+      ]
+
     ],
     // method used to computed the camera matrix: 0 - a regular method using all the points; 4 - Least-Median robust method; 8 - RANSAC-based robust method; -1 - Optimum method with minimum reprojection error
     "calTyp": 0,
